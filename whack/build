@@ -58,7 +58,7 @@ build_php() {
         --prefix=${PHP_DIR}
         --bindir=${PHP_DIR}/.bin
         --sbindir=${PHP_DIR}/.bin
-        --with-apxs2=/usr/sbin/apxs
+        --with-apxs2=${APACHE2_DIR}/.bin/apxs
         --with-libxml-dir=${LIBXML_DIR}
         --with-mysql=mysqlnd
     )
@@ -86,6 +86,6 @@ build_php() {
 build_php
 
 #~ echo 'LoadModule php5_module modules/libphp5.so' >> ${INSTALL_DIR}/conf/httpd.conf
-#echo '<FilesMatch \.php$>
-#    SetHandler application/x-httpd-php
-#</FilesMatch>' >> ${INSTALL_DIR}/conf/httpd.conf
+echo '<FilesMatch \.php$>
+    SetHandler application/x-httpd-php
+</FilesMatch>' >> ${INSTALL_DIR}/conf/httpd.conf
