@@ -43,7 +43,7 @@ add_php_arg() {
 }
 
 build_php() {
-    build_libxml
+#    build_libxml
     if [ -n "$WITH_LIBMCRYPT" ]; then
         build_libmcrypt
     fi
