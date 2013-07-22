@@ -86,6 +86,6 @@ build_php() {
 build_php
 
 #~ echo 'LoadModule php5_module modules/libphp5.so' >> ${INSTALL_DIR}/conf/httpd.conf
-echo '<FilesMatch \.php$>
-    SetHandler application/x-httpd-php
-</FilesMatch>' >> ${INSTALL_DIR}/conf/httpd.conf
+#echo '<FilesMatch \.php$>
+#    SetHandler application/x-httpd-php
+#</FilesMatch>' >> ${INSTALL_DIR}/conf/httpd.conf
