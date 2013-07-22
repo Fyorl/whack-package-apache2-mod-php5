@@ -59,7 +59,7 @@ build_php() {
         --bindir=${PHP_DIR}/.bin
         --sbindir=${PHP_DIR}/.bin
         --with-apxs2=${APACHE2_DIR}/.bin/apxs
-        --with-libxml-dir=${LIBXML_DIR}
+#        --with-libxml-dir=${LIBXML_DIR}
         --with-mysql=mysqlnd
     )
     
